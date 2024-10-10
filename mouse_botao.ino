@@ -26,22 +26,23 @@
 //const int analogico2 = A1;
 
 // Botoes de acao
-const int upButton = 2; movimento acima 
-const int downButton = 3; movimento abaixo
-const int leftButton = 5; movimento esquerda
-const int rightButton = 4; movimento direito
+const int upButton = 2; //movimento acima 
+const int downButton = 3; //movimento abaixo
+const int leftButton = 5; //movimento esquerda
+const int rightButton = 4; //movimento direito
 
-const int mouseButton = 6; clique esquerdo
-const int rightmouseButton = 7; clique direito
-const int leftLong = 8; clique esquerdo preso
-const int doubleleft = 9; clique esquer duplo
-const int StickButton = 10; botao scrool
-const int velocidade = 11; botao para alternar velocidade de movimento
+const int mouseButton = 6; //clique esquerdo
+const int rightmouseButton = 7; //clique direito
+const int leftLong = 8; //clique esquerdo preso
+const int doubleleft = 9; //clique esquer duplo
+const int StickButton = 10; //botao scrool
+const int velocidade = 11; //botao para alternar velocidade de movimento
 
 int range = 1;              // multiplicador do movimento do mouse em X e Y, quanto maior o numero mais rapido fica o mouse
 int responseDelay = 10;     // tempo de resposta do mouse(quanto maior o numero mais lento o mouse fica),numero em milisegundos
 boolean variavel = 0, variavel2 = 1, variavel3 = 1, variavel4 = 1, variavel5 = 1, variavel6 = 1;
-int d = 0, a = 0;
+int d = 0;
+unsigned long espaco = 0, a = 0;
 float  t = 0.1;
 
 void setup() {
