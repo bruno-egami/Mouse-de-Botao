@@ -16,7 +16,7 @@
 
 #define DEBOUNCING 50     //tempo(millisegundos) para o DEBOUNCING
 #define TEMPO 200         //tempo para fazer a funcao de acelerar o mouse(valor em milissegundos)
-#define MULTIPLI 0.3     //Variar entre 0.001 e 0.08 para acelerar o avanco do mouse apos 800 milissegundos segurados
+#define MULTIPLI 0.08     //Variar entre 0.001 e 0.08 para acelerar o avanco do mouse apos 800 milissegundos segurados
 #define MULTIPLICA 1023      //Velocidade maxima que o mouse tera no maximo do joystick(0-1023)
 
 //dizendo ao programa o numero dos pinos conectados aos botoes
