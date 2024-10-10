@@ -91,11 +91,11 @@ void loop() {
 
   if ((a + TEMPO) < (millis()) && d == 1) {
     t = t + MULTIPLI;
-    xDistance = (leftState - rightState) * t;
-    yDistance = (upState - downState) * t;
+    xDistance = (rightState - leftState) * t;
+    yDistance = (downState - upState) * t;
   } else {
-    xDistance = (leftState - rightState) * range;
-    yDistance = (upState - downState) * range;
+    xDistance = (rightState - leftState) * range;
+    yDistance = (downState - upState) * range;
     t = range;
   }
   if ((xDistance != 0) || (yDistance != 0)) {
